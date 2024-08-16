@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#cta">Call to Action</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to the Entertainment Hub!</h1>
+            <p>Explore the latest in movies, music, and games. Enjoy our curated content and interactive features.</p>
+        </section>
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery-container">
+                <img src="images/dark.png" alt="The Dark Knight" class="gallery-item">
+                <img src="images/dune.png" alt="Dune 2" class="gallery-item">
+                <img src="images/men.png" alt="No Country for Old Men" class="gallery-item">
+            </div>
+        </section>
+        <section id="cta">
+            <h2>Explore More</h2>
+            <div class="cta-buttons">
+                <a href="watch.html" class="cta-button">Watch Now</a>
+                <a href="listen.html" class="cta-button">Listen Here</a>
+                <a href="play.html" class="cta-button">Play Game</a>
+            </div>
+        </section>
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+            <form action="/submit-feedback" method="post" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Your Feedback" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Entertainment Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

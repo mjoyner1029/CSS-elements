@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home section */
+#home {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Gallery styles */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 300px;
+    border: 5px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    border-color: #ffcc00;
+}
+
+/* CTA Button styles */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Feedback Form styles */
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feedback-form button[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
